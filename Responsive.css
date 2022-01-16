@@ -1,0 +1,35 @@
+/* Responsive */
+
+@media screen  and (max-width: 1200px) {
+    .content-slider{
+        display: grid;
+        overflow: hidden;
+    }
+    .slide{
+        width: 100%;
+        position: absolute;
+    }
+    .slide:nth-child(1){
+        animation: alternate 1s infinite;
+    }
+    .slide:nth-child(1){
+        animation: alternate 1s infinite;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    .person{
+        grid-column: span 3;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--color-gray-light);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .person__info{
+        border:none;
+    }
+}
+
+
