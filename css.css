@@ -31,19 +31,19 @@ img{
     transition: flex-grow .5s;
 }
 .slide:nth-child(1){
-    background-image: url(./IMG_20200924_012756.jpg);
+    background-image: url(./imagenes/ocelote.png);
     background-size: cover;
     background-position: center;
     color: white;
 }
 .slide:nth-child(2){
-    background-image: url(./IMG_20200924_012756.jpg);
+    background-image: url(./imagenes/ajolote.png);
     background-size: cover;
     background-position: center;
     color: wheat;
 }
 .slide:nth-child(3){
-    background-image: url(./IMG_20200924_012756.jpg);
+    background-image: url(./imagenes/lobo.png);
     background-size: cover;
     background-position: center;
     color: white;
