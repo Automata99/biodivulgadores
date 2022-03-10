@@ -17,7 +17,9 @@ img{
     width: 100%;height: 100%;
     object-fit: cover;
 }
-
+.carousel{
+    display: none;
+}
 .content-slider{
     width: 100%;height: 100vh;
     display: flex;
@@ -31,19 +33,19 @@ img{
     transition: flex-grow .5s;
 }
 .slide:nth-child(1){
-    background-image: url(./imagenes/ocelote.png);
+    background-image: url(./IMG_20200924_012756.jpg);
     background-size: cover;
     background-position: center;
     color: white;
 }
 .slide:nth-child(2){
-    background-image: url(./imagenes/ajolote.png);
+    background-image: url(./IMG_20200924_012756.jpg);
     background-size: cover;
     background-position: center;
     color: wheat;
 }
 .slide:nth-child(3){
-    background-image: url(./imagenes/lobo.png);
+    background-image: url(./IMG_20200924_012756.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -69,6 +71,13 @@ img{
 .slide:hover{
     flex-grow: 6;
 }
+.Lema{
+    padding-left: 50vh;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
 /* customers */
 .container{
     display: flex;
@@ -80,6 +89,10 @@ img{
 /* Team */
 .team{
     text-align: center;
+}
+.team__description{
+    font-family: 'Crimson Pro', serif;
+    font-size: 3vh;
 }
 .person{
     width: 280px;
@@ -132,7 +145,7 @@ img{
     color: #fff;
     background-color: var(--color-color-yellow-medium);
     border-color: var(--color-color-yellow-medium);
-}
+}   
 .team{
     display:grid;
     grid-template-columns: repeat(3, 1fr);

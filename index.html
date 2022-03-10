@@ -4,18 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./CSS.css">
     <link rel="stylesheet" href="./Responsive.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>AMB</title>
 </head>
 <body>
+    <!-- Slider-Responsive -->
+    <div id="carousel1" class="carousel slide">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+           <img src="./recorrido-de-ajolotes-en-xochimilco.jpg" alt="" >
+        </div>
+        <div class="carousel-item">
+           <img src="./recorrido-de-ajolotes-en-xochimilco.jpg" alt="" >
+        </div>
+        <div class="carousel-item">
+           <img src="./recorrido-de-ajolotes-en-xochimilco.jpg" alt="" >
+        </div>
+        </div>
+
+        <!--Controles NEXT y PREV-->
+        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--Controles de indicadores-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+    </div>
+
     <!-- Slider -->
     <section class="content-slider">
         <article class="slide">
             <div class="content">
                 <h2>Misión</h2>
                 <!--silede 1-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio fugiat? Iure deleniti vel blanditiis, esse quibusdam ad atque itaque, repudiandae labore enim aut sint iusto, natus temporibus molestias quidem!</p>
+            <p>
+                Asociación Mexicana de Biodivulgadores es un grupo de personas de diferentes estados de la República Mexicana dedicados a la divulgación científica de la Biología y sus ramas; así como promover la educación ambiental, el cuidado de la biodiversidad nativa de México y el cumplimiento de los objetivos de desarrollo sustentable de la agenda 2030.
+
+                La asociación fue creada con la finalidad de causar un impacto positivo en las futuras generaciones y promover el estudio de una carrera científica en el área de Ciencias Biológicas y de la Salud.
+
+                Combatir la desinformación en base a la ciencia, inspirar a más jóvenes a estudiar una carrera científica o tecnológica, promover la educación ambiental, y la conservación.
+            </p>
             </div>
         </article >
 
@@ -23,7 +66,14 @@
             <div class="content">
                 <h2>¿Quiénes somos?</h2>
                 <!--silede 2-->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio fugiat? Iure deleniti vel blanditiis, esse quibusdam ad atque itaque, repudiandae labore enim aut sint iusto, natus temporibus molestias quidem!</p>
+                <p>
+                    La Asociación Mexicana se creó el 21 enero del 2021 bajo el lema "sin ciencia no hay futuro" por Veneyra Herrera, Yesica    Baltazar y Cesar Bany solar.
+                    <br>
+                    <span class="Lema">"Sin Ciencia no hay Futuro"</span>
+                    <br>
+                    El conocimiento que el ser humano ha obtenido en la actualidad, es gracias al método científico, que es un patrimonio de todos y como tal debemos defenderlo frente a la amenaza y el insulto de la ignorancia, el bulo y la conspiranoia
+                    Los científicos y científicas en México enfrentan la poca inversión de la agenda pública a la ciencia misma. Problema para el  desarrollo del país, frenando sus avances en un área tan importante y sin poder darle solución misma los retos que actualmente enfrenta la sociedad.
+                </p>
             </div>
         </article>
 
@@ -43,13 +93,13 @@
             <h2 class="team__title">Nuestro equipo</h2>
             <!-- Description -->
             <p class="team__description">
-                The first requirement for an user experience is to meet the exact needs of the customer
+                Grupo de personas dedicadas a la divulgación científica de la biología y sus ramas con el objetivo de inspirar, promover y compartir conocimiento, para garantizar un cambio de impacto y dar una visión positivaba sobre la ciencia mexicana, educación y la conservación.
             </p>
             <!-- Card #1 -->
             <article class="person">
                 <!-- Img -->
                 <figure class="person__img">
-                    <img src="./imagenes/profile_vene.jpg" alt="John Doe">
+                    <img src="./Team/249364990_4442708625797090_3884920106815421791_n.jpg" alt="John Doe">
                 </figure>
                 <!-- Details -->
                 <div class="person__info">
@@ -61,14 +111,11 @@
                     </p>
                     <!-- Social networks -->
                     <footer class="social-networks">
-                        <a href="#" class="social-networks__link">
+                        <a href="https://www.facebook.com/Sarahimitre" class="social-networks__link">
                             <ion-icon name="logo-facebook"></ion-icon>
                         </a>
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                        <a href="https://www.instagram.com/itsmitre/?r=nametag" class="social-networks__link">
+                            <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </footer>
                 </div>
@@ -78,8 +125,7 @@
             <article class="person">
                 <!-- Img -->
                 <figure class="person__img">
-                    <img src="./imagenes/profile_yesica.jpg" alt="John Doe">
-                    
+                    <img src="./Team/YuYFsYyW_400x400.jpg" alt="John Doe">
                 </figure>
                 <!-- Details -->
                 <div class="person__info">
@@ -91,13 +137,10 @@
                     </p>
                     <!-- Social networks -->
                     <footer class="social-networks">
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                        <a href="#" class="social-networks__link">
+                        <a href="https://twitter.com/Chikirriyo_o?t=arW33IAlnJFr5t9tSH7mlw&s=09" class="social-networks__link">
                             <ion-icon name="logo-twitter"></ion-icon>
                         </a>
-                        <a href="#" class="social-networks__link">
+                        <a href="https://www.linkedin.com/in/cecilia-rojas-mart%C3%ADnez-7a915a187" class="social-networks__link">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                     </footer>
@@ -107,8 +150,7 @@
             <article class="person">
                 <!-- Img -->
                 <figure class="person__img">
-                    <img src="./imagenes/profile_julia.jpg" alt="John Doe">
-                    
+                    <img src="./Team/aa6d34439116ace105c31e4d68ece97d_c5_100x100.jpeg" alt="John Doe">
                 </figure>
                 <!-- Details -->
                 <div class="person__info">
@@ -120,14 +162,11 @@
                     </p>
                     <!-- Social networks -->
                     <footer class="social-networks">
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-facebook"></ion-icon>
+                        <a href="https://www.instagram.com/liis_sanc/" class="social-networks__link">
+                            <ion-icon name="logo-instagram"></ion-icon>
                         </a>
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                        <a href="https://www.tiktok.com/@liissanc" class="social-networks__link">
+                            <ion-icon name="logo-tiktok"></ion-icon>
                         </a>
                     </footer>
                 </div>
@@ -137,7 +176,7 @@
             <article class="person">
                 <!-- Img -->
                 <figure class="person__img">
-                    <img src="./imagenes/profile_oscar.jpg" alt="John Doe">
+                    <img src="./IMG_20200924_012756.jpg" alt="John Doe">
                 </figure>
                 <!-- Details -->
                 <div class="person__info">
@@ -165,7 +204,7 @@
             <article class="person">
                 <!-- Img -->
                 <figure class="person__img">
-                    <img src="./imagenes/profile_bany.jpg" alt="John Doe">
+                    <img src="./Team/271724874_144894971243290_5138570855619085569_n.jpg" alt="Ajolote">
                 </figure>
                 <!-- Details -->
                 <div class="person__info">
@@ -177,14 +216,11 @@
                     </p>
                     <!-- Social networks -->
                     <footer class="social-networks">
-                        <a href="#" class="social-networks__link">
+                        <a href="https://www.facebook.com/ven.axolotl/" class="social-networks__link">
                             <ion-icon name="logo-facebook"></ion-icon>
                         </a>
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                        <a href="#" class="social-networks__link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                        <a href="https://www.instagram.com/ajolote_cientifico/?utm_medium=copy_link" class="social-networks__link">
+                            <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </footer>
                 </div>
@@ -193,7 +229,7 @@
             <article class="person">
                 <!-- Img -->
                 <figure class="person__img">
-                    <img src="./imagenes/profile_cecilia.jpg" alt="John Doe">   
+                    <img src="./IMG_20200924_012756.jpg" alt="John Doe">
                 </figure>
                 <!-- Details -->
                 <div class="person__info">
@@ -219,24 +255,15 @@
             </article>
         </section>
     </div>
+
     <!-- Icons: Ionicons: https://ionicons.com/ -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-        const btnOpenMenu=document.getElementById('btn-menu-active')
-        const mainMenuMobil=document.getElementById('main-menu-mobil')
-        let NavbarStyle=document.getElementById('styles-menu')
-
-        window.addEventListener('scroll',()=>{
-            if(window.scrollY >= 300){
-                NavbarStyle.classList.add('scrolled')
-            } else{
-                NavbarStyle.classList.remove('scrolled')
-            }
-        })
-
-        btnOpenMenu.addEventListener('click',()=>{
-            mainMenuMobil.classList.toggle('active')
-        })
+        $('.carousel').carousel();
     </script>
+
 </body>
 </html>

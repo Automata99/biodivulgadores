@@ -1,8 +1,12 @@
 /* Responsive */
 
+
 @media screen  and (max-width: 1200px) {
+    .carousel{
+        display: block;
+    }
     .content-slider{
-        display: grid;
+        display: none;
         overflow: hidden;
     }
     .slide{
@@ -15,7 +19,6 @@
     .slide:nth-child(1){
         animation: alternate 1s infinite;
     }
-
 }
 
 @media screen and (max-width:576px){
